@@ -11,6 +11,7 @@ This script reads a FASTA file and a list of motifs, finds all motif occurrences
 pycairo must be installed
 
 -f: FASTA file
+
 -m: file contiaining one motif per line
 
 # Input files
@@ -25,17 +26,20 @@ FASTA file
 
 # Motif file
 one motif per line
+
 motifs can incude IUPAC codes and can be DNA or RNA
+
     Example:
-    YGCY
-    catag
-    GCAUG
-    YYYYYYYYYY
+        YGCY
+        catag
+        GCAUG
+        YYYYYYYYYY
 
 # Running Script
 python3 motif-mark-oop.py -f Figure_1.fasta -m Fig_1_motifs.txt
 
 # Output
 one PNG file using the same prefix as the input FASTA file
+
     Example:
-    Figure_1.png
+        Figure_1.png
